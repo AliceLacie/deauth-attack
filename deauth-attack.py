@@ -50,7 +50,7 @@ def auth_Station_res(ap, station,ifcae, cnt=0):
         sendp(pkt, inter=0.1, count=cnt,iface=iface, verbose=False)
 
 
-parser = argparse.ArgumentParser(description='airoplay-ng clone\n\nusage: python3 airoplay-ng.py <interface>',formatter_class=RawTextHelpFormatter)
+parser = argparse.ArgumentParser(description='deauth-attack\n\nusage: python3 deauth-attack.py -i <interface> -a <ap mac> [ -s <station mac> [-auth]]',formatter_class=RawTextHelpFormatter)
 parser.add_argument('-i', help='<interface>',required=True)
 parser.add_argument('-a', help='<AP MAC Address>',required=True)
 parser.add_argument('-s', help='<Station MAC Address>', required=False)
